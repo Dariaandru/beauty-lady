@@ -9,7 +9,14 @@
 
 body {
     background-color: #F9F9FA;
-    /* width: 100%; */
+    /* width: fit-content */
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
 }
 
 .white {
@@ -470,6 +477,168 @@ a {
     color: white;
 }
 
+/* -----------------ABOUT -US---------------------------------------------- */
+
+
+/* about */
+
+.about {
+    display: grid;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.about--title {
+    padding-inline: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0082CA;
+    border-radius: 30px;
+    color: white;
+}
+
+.about--text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.advantages {
+    display: grid;
+    gap: 30px;
+    font-size: 24px;
+}
+
+.advantages--items {
+    display: grid;
+    gap: 15px;
+}
+
+.advantages--items--item {
+    margin-left: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* cards */
+
+.cards {
+    display: flex;
+    /* gap: 40px; */
+    justify-content: space-between;
+    font-size: 24px;
+    flex-wrap: wrap;
+}
+
+
+.cards--card {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: clamp(320px, 46vw, 375px) ;
+    height: 390px;
+}
+
+.icon_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon_title--icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #0082CA;
+    display: flex;
+    align-items: center;
+}
+
+.icon_title--icon img {
+    margin-inline: auto;
+
+}
+
+.gap {
+    display: grid;
+    gap: 20px;
+}
+
+/* brends */
+
+.brends {
+    display: grid;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.brends--title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 30px;
+    background-color: #0082CA;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.brends--title--arrows {
+    display: flex;
+    gap: 50px;
+
+}
+
+.brends--cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+    
+}
+
+.brends--cards--card {
+    background-color: white;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-inline: 70px;
+    width: clamp(320px, 46vw, 368px);
+    display: grid;
+    align-content: space-between;
+    color: #0082CA;
+    justify-content: center;
+    text-align: center;
+    row-gap: 10px;
+}
+
+.brends--cards--card img {
+    
+    max-height: 100px;
+}
+
+
+.brends--cards--card:hover {
+    background-color: #0083ca33;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 800px) {
@@ -515,7 +684,7 @@ a {
     }
 
     .logo {
-        width: 100px;
+        width: 80px;
     }
 
     .header--menu--items_button {
@@ -526,4 +695,10 @@ a {
         padding-inline: 7px;
 
     }
+
+    .brends--cards--card {
+        height: 200px;
+        padding: 30px;
+    }
+
 }
