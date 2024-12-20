@@ -626,17 +626,137 @@ a {
     background-color: #0083ca33;
 }
 
+/* -------------BASKET PAGE--------------------------------- */
+
+.basket {
+    display: grid;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.basket--title {
+    padding-inline: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    background-color: #0082CA;
+    color: white;
+}
+
+.basket--cards {
+    display: grid;
+    gap: 30px;
+}
+
+.basket--cards--card {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.basket--cards--card--title {
+    display: grid;
+    gap: 11px;
+    width: 320px;
+}
+
+.basket--cards--card--title--size {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.basket--cards--card--price {
+    display: grid;
+    gap: 6px;
+}
+
+.basket--cards--card--quantity {
+    display: flex;
+    gap: 0;
+}
+
+.basket--cards--card--quantity--sign {
+    padding: 10px;
+    background-color: #0082CA;
+    color: white;
+}
+
+.basket--cards--card--quantity--value {
+    width: 76px;
+    text-align: center;
+    padding: 10px;
+    background-color: #F9F9FA;
+}
+
+/* pay */
+
+.pay_var {
+    display: grid;
+    gap: 20px;
+    font-size: 24px;
+}
+
+.pay_var--title {
+    padding-inline: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    background-color: #0082CA;
+    color: white;
+}
+
+.pay_var--items {
+    display: grid;
+    gap: 0;
+}
+
+.pay_var--items--item {
+    display: flex;
+    gap: 40px;
+    padding-inline: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-items: center;
+}
+
+.blue_opacity {
+    background-color: #0083ca45;
+}
+
+.pay_var--button {
+    padding-inline: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    background-color: #0082CA;
+    color: white;
+    width: fit-content;
+}
 
 
+.pay_var--button:hover {
+    background-color: #0083ca85;
+}
 
+.pay_var--items--item:hover {
+    background-color: #0083ca45;
+}
 
+.basket--cards--card--quantity--sign:hover {
+    background-color: #0083ca45;
 
+}
 
+.basket--cards--card img:hover {
+    padding: 5px;
+    background-color: #0083ca45;
 
-
-
-
-
+}
 
 
 
@@ -699,6 +819,15 @@ a {
     .brends--cards--card {
         height: 200px;
         padding: 30px;
+    }
+
+    .basket--cards--card--title {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 150px;
+        height: 150px;
     }
 
 }
